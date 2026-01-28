@@ -8,7 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class Student extends Model
 {
     use HasFactory;
-
-    // AÑADE ESTA LÍNEA (Si ya existe, asegúrate de que tiene los 3 campos)
+    // Permitir asignación masiva
     protected $fillable = ['name', 'email', 'phone'];
 }

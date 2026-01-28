@@ -3,9 +3,9 @@
         <div class="flex justify-between items-center py-4">
 
             <div class="flex space-x-4 items-center">
-                <a href="{{ route('main') }}" class="font-bold hover:text-indigo-200">{{ __('Home') }}</a>
+                <a href="{{ route('home') }}" class="font-bold hover:text-indigo-200">{{ __('Home') }}</a>
                 @auth
-                    <a href="{{ route('projects') }}" class="hover:text-indigo-200">{{ __('Projects') }}</a>
+                    <a href="{{ route('projects.index') }}" class="hover:text-indigo-200">{{ __('Projects') }}</a>
                     <a href="{{ route('students.index') }}" class="hover:text-indigo-200">{{ __('Students') }}</a>
                 @endauth
             </div>
